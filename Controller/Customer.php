@@ -8,7 +8,6 @@ class Controller_Customer extends Controller_Core_Action
 		print_r ($customer->getShippingAddress());
 		die();
 	}
-
 	public function gridAction()
 	{
 		try {
@@ -19,7 +18,6 @@ class Controller_Customer extends Controller_Core_Action
 
 		}
 	}
-
 	public function addAction()
 	{
 		try {
@@ -136,6 +134,5 @@ class Controller_Customer extends Controller_Core_Action
 
 		$this->redirect('grid', null, [], true);
 	}
-
 }
 ?>

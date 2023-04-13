@@ -30,7 +30,7 @@ class Controller_Eav_Attribute extends Controller_Core_Action
 			}
 			$layout->addContent('edit', $layout->createBlock('Eav_Attribute_Edit')->setData(['eavAttribute' => $eavAttribute]));
 			$layout->render();
-		} catch (Exception $e) {
+		} catch (Exception $e) { 
 			$this->getMessage()->addMessage($e->getMessage(),Model_Core_Message::FAILURE);
 			$this->redirect('grid');
 		}

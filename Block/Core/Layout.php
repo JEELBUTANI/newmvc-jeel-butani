@@ -29,7 +29,6 @@ class Block_Core_Layout extends Block_Core_Template
 		$block = 'Block_'.$blockName;
 		return (new $block())->setLayout($this);
 	}
-
 	public function addContent($key, $object)
 	{
 		return $this->getChild('content')->addChild($key, $object);

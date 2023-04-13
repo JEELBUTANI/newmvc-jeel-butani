@@ -9,7 +9,7 @@ class Block_Product_Grid extends Block_Core_Template
 
 	public function getProducts()
 	{
-		$query = "SELECT * FROM `product` ORDER BY `name` DESC;";
+		$query = "SELECT * FROM `product` ORDER BY `product_id` ASC;";
 		$products =  Ccc::getModel('Product')->fetchAll($query);
 		return $products->getData();
 	}

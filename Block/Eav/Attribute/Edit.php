@@ -26,6 +26,7 @@ class Block_Eav_Attribute_Edit extends Block_Core_Template
 			$options =  Ccc::getModel('Eav_Attribute_Option')->fetchAll($query);
 			return $options;
 		}
+		
 		return Ccc::getModel('Eav_Attribute_Option');
 	}
 }
